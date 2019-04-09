@@ -14,9 +14,9 @@ class ProductTable extends Component {
     });
     return (
       <div>
-        <button type="button" onClick={this.props.onClick} className="btn btn-success pull-right">Back</button>
-        <button type="button" onClick={this.props.onRowAdd} className="btn btn-success pull-right">Add</button>
-        <table className="table table-bordered">
+        <button type="button" onClick={this.props.onClick} className="btn btn-secondary mb-1">Back</button>
+        <button type="button" onClick={this.props.onRowAdd} className="btn btn-success float-right">Add</button>
+        <table className="table table-bordered table-dark table-hover">
           <thead>
             <tr>
               <th>Name</th>

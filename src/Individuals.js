@@ -6,7 +6,7 @@ class Individuals extends Component {
   render() {
     return (
       <div>
-        Current category : {this.props.category}
+        <h1 className="text-center">{this.props.category}s</h1>
         <ProductTable 
           animals={this.props.animals}
           category={this.props.category}

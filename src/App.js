@@ -154,7 +154,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         { this.state.isCategoryDisplayed ? <Categories categories={this.state.categories} onClick={this.handleViewClick} /> : null }
         { this.state.isIndividualsDisplayed ? <Individuals animals={this.state.animals} category={this.state.currentCategory} onClick={this.handleViewClick} onProductTableUpdate={this.handleProductTable} onRowAdd={this.handleAddEvent} onRowDel={this.handleRowDel} /> : null }
       </div>

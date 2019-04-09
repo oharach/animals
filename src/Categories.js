@@ -8,7 +8,8 @@ class Categories extends Component {
     });
     return (
       <div>
-        <table className="table table-bordered">
+        <h1 className="text-center">Animal types</h1>
+        <table className="table table-bordered table-dark table-hover">
           <thead>
             <tr>
               <th>Type</th>
