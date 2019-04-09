@@ -140,7 +140,8 @@ class App extends Component {
     var animals = this.state.animals.slice();
     var newAnimals = animals.map(function(animal) {
       for (var key in animal) {
-        if (key == item.name && animal.id == item.id) {
+        let animalId = String(animal.id);
+        if (key === item.name && animalId === item.id) {
           animal[key] = item.value;
         }
       }
