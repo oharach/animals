@@ -40,7 +40,7 @@ class ProductRow extends Component {
     return (
       <tr className="eachRow">
         <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
-          "type": "name",
+          type: "name",
           value: this.props.product.name,
           id: this.props.product.id
         }}/>
