@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Categories from './Categories';
 import Individuals from './Individuals';
 

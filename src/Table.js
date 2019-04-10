@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 class ProductTable extends Component {
 
@@ -49,8 +51,8 @@ class ProductRow extends Component {
           value: this.props.product.age,
           id: this.props.product.id
         }}/>
-        <td className="del-cell">
-          <input type="button" onClick={this.onDelEvent.bind(this)} value="X" className="del-btn"/>
+        <td className="del-cell text-center">
+          <FontAwesomeIcon icon={faTrashAlt} onClick={this.onDelEvent.bind(this)} />
         </td>
       </tr>
     );

@@ -14,7 +14,7 @@ class Categories extends Component {
             <tr>
               <th>Type</th>
               <th>Diet</th>
-              <th>quantity</th>
+              <th>Number of individuals</th>
             </tr>
           </thead>
           
