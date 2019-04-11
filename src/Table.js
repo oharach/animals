@@ -35,6 +35,10 @@ class ProductTable extends Component {
 }
 
 class ProductRow extends Component {
+  constructor(props) {
+    super(props);
+    this.onDelEvent = this.onDelEvent.bind(this);
+  }
   onDelEvent() {
     this.props.onDelEvent(this.props.product);
   }
@@ -52,7 +56,7 @@ class ProductRow extends Component {
           id: this.props.product.id
         }}/>
         <td className="del-cell text-center">
-          <FontAwesomeIcon icon={faTrashAlt} onClick={this.onDelEvent.bind(this)} />
+          <FontAwesomeIcon icon={faTrashAlt} onClick={this.onDelEvent} />
         </td>
       </tr>
     );
